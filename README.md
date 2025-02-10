@@ -51,7 +51,7 @@ provider "google" {
 ### Compute network with IPV4 and public and private subnets
 ```hcl
 module "vpc_main" {
-  source     = "web-virtua-gcp-multi-account-modules/vpc-full/gcp"
+  source     = "web-virtua-gcp-multi-account-modules/network-full/google"
   name       = "tf-vpc-main"
 
   public_subnets = [
